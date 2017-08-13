@@ -13,7 +13,7 @@ public class Solution15 {
                 if(nums[j]==nums[i]){
                     continue;
                 }
-                if(nums[j])
+//                if(nums[j])
             }
         }
         List<List<Integer>> result = new LinkedList<>();
