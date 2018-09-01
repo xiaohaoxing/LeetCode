@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.solution11;
 
 public class Solution11 {
 	public int maxArea(int[] height) {
