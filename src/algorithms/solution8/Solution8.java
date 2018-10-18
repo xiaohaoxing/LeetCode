@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.solution8;
 /**
  * 实现从String到int的转化，具体实现繁琐而不难。遇到以下几种情况：
  * 1.0的时候返回多少

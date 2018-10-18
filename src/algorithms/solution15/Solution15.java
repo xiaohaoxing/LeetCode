@@ -1,6 +1,7 @@
-package algorithms;
+package algorithms.solution15;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by Lenovo on 16.9.30.

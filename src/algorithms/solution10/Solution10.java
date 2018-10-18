@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.solution10;
 //必须考虑的案例："a*a"匹配"aaa"
 //因此可能考虑的方式是：倒序匹配
 public class Solution10 {

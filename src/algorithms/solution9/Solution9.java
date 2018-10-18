@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.solution9;
 
 /**
  * 从最低位开始获取，并生成反串，再倒数第二位时判断是否相同，而不用完全反串

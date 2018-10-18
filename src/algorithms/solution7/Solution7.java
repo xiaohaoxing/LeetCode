@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.solution7;
 /**
  * 反转数字
  * 要点：

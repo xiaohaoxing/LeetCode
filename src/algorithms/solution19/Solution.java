@@ -1,4 +1,4 @@
-package algorithms.Solution19;
+package algorithms.solution19;
 /**
  * Definition for singly-linked list.
  * public class ListNode {

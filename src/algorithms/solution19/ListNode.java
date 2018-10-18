@@ -1,4 +1,4 @@
-package algorithms.Solution19;
+package algorithms.solution19;
  public class ListNode {
      int val;
      ListNode next;

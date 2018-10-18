@@ -1,4 +1,5 @@
-package algorithms;
+package algorithms.solution8;
+
 /**
  * 提交永远显示"-1"会被转成1.本地run结果正确。原因未知。
  * @author Administrator

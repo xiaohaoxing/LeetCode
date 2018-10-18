@@ -1,4 +1,4 @@
-package algorithms.problem13;
+package algorithms.solution13;
 
 import java.util.HashMap;
 

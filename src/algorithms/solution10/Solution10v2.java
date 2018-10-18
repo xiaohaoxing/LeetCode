@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.solution10;
 
 public class Solution10v2 {
 	public boolean isMatch(String s, String p) {
