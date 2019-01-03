@@ -32,8 +32,20 @@ public class Solution2 {
                 return count;
             }
         }
-        int adividend = Math.abs(dividend);
-        int adivisor = Math.abs(divisor);
+        if (divisor == 1) {
+            return dividend;
+        }
+        if (divisor == -1) {
+            return -dividend;
+        }
+        if (divisor == 2) {
+            return dividend >> 1;
+        }
+        if (divisor == -2) {
+            return -dividend >> 1;
+        }
+        int adividend = dividend > 0 ? dividend : -dividend;
+        int adivisor = divisor > 0 ? divisor : -divisor;
         while (adividend >= adivisor) {
             adividend = adividend - adivisor;
             count++;
