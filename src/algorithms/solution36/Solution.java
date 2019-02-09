@@ -59,12 +59,12 @@ public class Solution {
 
     private static boolean checkList(int[] list) {
         boolean[] flags = new boolean[10];
-        for (int i = 0; i < 0; i++) {
+        for (int i = 0; i < 10; i++) {
             flags[i] = false;
         }
         for (int i : list) {
             if (i != 0) {
-                if (flags[i] == true) {
+                if (flags[i]) {
                     return false;
                 } else {
                     flags[i] = true;
@@ -109,7 +109,8 @@ public class Solution {
                 {'.', '.', '.', '.', '.', '.', '.', '.', '.'}
         };
         Solution test = new Solution();
-
+        System.out.println(test.isValidSudoku(board));
+        System.out.println(test.isValidSudoku(board2));
         System.out.println(test.isValidSudoku(board3));
         boolean result = checkList(new int[]{0, 0, 0, 5, 0, 1, 8, 1, 3});
         System.out.println(result);
