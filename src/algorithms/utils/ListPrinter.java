@@ -30,4 +30,16 @@ public class ListPrinter {
         String result = sb.toString();
         System.out.println(result.substring(0, result.length() - 1) + "]");
     }
+
+    public static void printTable(char[][] table) {
+        System.out.print("[");
+        for (char[] list : table) {
+            StringBuilder sb = new StringBuilder("[");
+            for (char c : list) {
+                sb.append(c + ",");
+            }
+            System.out.println(sb.subSequence(0, sb.length() - 1) + "]");
+        }
+        System.out.println("]");
+    }
 }
