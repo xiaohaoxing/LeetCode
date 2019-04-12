@@ -69,9 +69,18 @@ public class Solution10 {
 
 	public static void main(String args[]) {
 		Solution10 test = new Solution10();
+		String a = "1009789268@qq.com";
+		String b = "xiaohaoxing@qq.com";
+		// 匹配账号是数字的邮想
+		System.out.println(a.replace("@qq.com", "扣扣邮箱"));
+//		boolean resulta = a.matches("[0-9]*@[a-z]*[.][a-z]*$");
+//		boolean resultb = b.matches("[0-9]*@[a-z]*[.][a-z]*$");
+//		System.out.println(resulta);
+//		System.out.println(resultb);
 //
 //		int after = test.matchRange("abbbbc", 'b', 1);
 //		System.out.println("结束的位置是：" + after);
-		System.out.println(test.isMatch("aa", "a*"));
+//		System.out.println(test.isMatch("aa", "a*"));
+
 	}
 }
