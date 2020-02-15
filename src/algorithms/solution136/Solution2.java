@@ -20,7 +20,7 @@ public class Solution2 {
 
     public static void main(String[] args) {
         int[] list = new int[]{4, 1, 2, 1, 2};
-        Solution test = new Solution();
+        Solution2 test = new Solution2();
         int result = test.singleNumber(list);
         System.out.println(result);
     }
