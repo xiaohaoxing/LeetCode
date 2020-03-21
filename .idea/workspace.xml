@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b96a0f5-a5f1-4078-ba87-dbfec5600f4b" name="Default" comment="✅  AC 40题。">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/solution42/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/solution46/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/solution771/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/solution771/Solution2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mioj/Solution27.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43082825ce07cc80841a8512f17c8b8b62b2dad2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43082825ce07cc80841a8512f17c8b8b62b2dad2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/d/fd32747d9294d415b8cfe66b21324177a5dad74e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/d/fd32747d9294d415b8cfe66b21324177a5dad74e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,21 +31,12 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>size</find>
-      <find>*</find>
-      <find>[</find>
-      <find>]</find>
-      <find>&quot;</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>{</replace>
-      <replace>}</replace>
-      <replace>'</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="肖皓星 &lt;xiaohaoxing@xiaomi.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
@@ -50,12 +46,6 @@
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="77" />
-    <option name="y" value="23" />
-    <option name="width" value="1603" />
-    <option name="height" value="1027" />
   </component>
   <component name="ProjectId" id="1Xksm2AE5BtHOuoR5eJzreXiqGw" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -104,7 +94,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -113,7 +105,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -121,7 +113,7 @@
       <recent name="nowcoder.practice2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.Solution27">
     <configuration name="Logs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Logs" />
       <module name="LeetCode" />
@@ -144,13 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithms.solution41.Solution" />
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithms.solution43.Solution" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.solution41.*" />
+          <option name="PATTERN" value="algorithms.solution43.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,13 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhiteAndBlack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nowcoder.WhiteAndBlack" />
+    <configuration name="Solution27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mioj.Solution27" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nowcoder.*" />
+          <option name="PATTERN" value="mioj.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,19 +216,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Run Problem11" />
-      <item itemvalue="Application.Solution (2)" />
-      <item itemvalue="Application.WhiteAndBlack" />
       <item itemvalue="Application.Logs" />
       <item itemvalue="Application.Solution2" />
       <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.Solution (1)" />
+      <item itemvalue="Application.Solution27" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution27" />
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Solution2" />
         <item itemvalue="Application.Logs" />
-        <item itemvalue="Application.WhiteAndBlack" />
-        <item itemvalue="Application.Solution (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -298,6 +290,18 @@
       <workItem from="1562236323288" duration="49000" />
       <workItem from="1562237886174" duration="241000" />
       <workItem from="1581601587968" duration="2223000" />
+      <workItem from="1581647218898" duration="1762000" />
+      <workItem from="1581688623533" duration="305000" />
+      <workItem from="1581776540567" duration="4171000" />
+      <workItem from="1582442411877" duration="696000" />
+      <workItem from="1582469079032" duration="341000" />
+      <workItem from="1582509653111" duration="429000" />
+      <workItem from="1582558977327" duration="281000" />
+      <workItem from="1582596368111" duration="473000" />
+      <workItem from="1582733095690" duration="2848000" />
+      <workItem from="1582770176635" duration="99000" />
+      <workItem from="1584705955962" duration="1348000" />
+      <workItem from="1584707798554" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="完成 problem11.">
       <created>1535760874023</created>
@@ -418,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555075869713</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="✅  AC 43题。">
+      <created>1581780722469</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1581780722469</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -478,27 +489,36 @@
     <MESSAGE value="✅  尝试解决数独，但是使用的算法有问题，不能解决较为复杂的数独。可能需要改进为&quot;行内存在唯一性&quot;方式实现。" />
     <MESSAGE value="✅  AC 39题" />
     <MESSAGE value="✅  AC 40题。" />
-    <option name="LAST_COMMIT_MESSAGE" value="✅  AC 40题。" />
+    <MESSAGE value="✅  AC 43题。" />
+    <option name="LAST_COMMIT_MESSAGE" value="✅  AC 43题。" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="232" key="GridCell.Tab.0.bottom" timestamp="1581607131949">
+    <state x="424" y="96" key="CommitChangelistDialog2" timestamp="1581780722275">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1638" height="232" key="GridCell.Tab.0.bottom/0.23.1680.954@0.23.1680.954" timestamp="1581607131949" />
-    <state width="1638" height="232" key="GridCell.Tab.0.center" timestamp="1581607131948">
-      <screen x="0" y="23" width="1680" height="954" />
+    <state x="424" y="96" key="CommitChangelistDialog2/0.23.1680.954@0.23.1680.954" timestamp="1581780722275" />
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1584709457605">
+      <screen x="0" y="23" width="1680" height="951" />
     </state>
-    <state width="1638" height="232" key="GridCell.Tab.0.center/0.23.1680.954@0.23.1680.954" timestamp="1581607131948" />
-    <state width="1638" height="232" key="GridCell.Tab.0.left" timestamp="1581607131947">
-      <screen x="0" y="23" width="1680" height="954" />
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.951@0.23.1680.951" timestamp="1584709457605" />
+    <state width="1638" height="219" key="GridCell.Tab.0.bottom/0.23.1680.954@0.23.1680.954" timestamp="1581780740325" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1584709457605">
+      <screen x="0" y="23" width="1680" height="951" />
     </state>
-    <state width="1638" height="232" key="GridCell.Tab.0.left/0.23.1680.954@0.23.1680.954" timestamp="1581607131947" />
-    <state width="1638" height="232" key="GridCell.Tab.0.right" timestamp="1581607131948">
-      <screen x="0" y="23" width="1680" height="954" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.951@0.23.1680.951" timestamp="1584709457605" />
+    <state width="1638" height="219" key="GridCell.Tab.0.center/0.23.1680.954@0.23.1680.954" timestamp="1581780740324" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1584709457604">
+      <screen x="0" y="23" width="1680" height="951" />
     </state>
-    <state width="1638" height="232" key="GridCell.Tab.0.right/0.23.1680.954@0.23.1680.954" timestamp="1581607131948" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.951@0.23.1680.951" timestamp="1584709457604" />
+    <state width="1638" height="219" key="GridCell.Tab.0.left/0.23.1680.954@0.23.1680.954" timestamp="1581780740323" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1584709457605">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.951@0.23.1680.951" timestamp="1584709457605" />
+    <state width="1638" height="219" key="GridCell.Tab.0.right/0.23.1680.954@0.23.1680.954" timestamp="1581780740324" />
     <state width="1638" height="232" key="GridCell.Tab.1.bottom" timestamp="1581607131950">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
@@ -515,6 +535,10 @@
       <screen x="0" y="23" width="1680" height="954" />
     </state>
     <state width="1638" height="232" key="GridCell.Tab.1.right/0.23.1680.954@0.23.1680.954" timestamp="1581607131950" />
+    <state x="341" y="137" key="SettingsEditor" timestamp="1584707943376">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state x="341" y="137" key="SettingsEditor/0.23.1680.951@0.23.1680.951" timestamp="1584707943376" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,66 +682,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
