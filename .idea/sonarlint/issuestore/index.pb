@@ -19,3 +19,6 @@ Y
 )src/algorithms/solution771/Solution2.java,f/4/f47930b3f841f0e4342a9d3756b967fe8b4719e2
 H
 src/mioj/Solution27.java,9/c/9cf41241a5d7258f8419e792f4daa0b485bbd273
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
