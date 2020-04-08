@@ -12,5 +12,14 @@ public class Solution {
         return (root.val >= L && root.val <= R ? root.val : 0) + (root.left == null ? 0 : rangeSumBST(root.left, L, R)) + (root.right == null ? 0 : rangeSumBST(root.right, L, R));
     }
 }
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    
+    TreeNode(int x) {
+        val = x;
+    }
+}
 
 
