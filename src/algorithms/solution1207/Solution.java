@@ -13,6 +13,7 @@ public class Solution {
     public boolean uniqueOccurrences(int[] arr) {
         HashMap<Integer, Integer> count = new HashMap<>();
         for(int i:arr) {
+            // TODO 可以用 getOrDefault 替换掉 if else
             if(count.containsKey(i)) {
                 count.put(i, count.get(i) + 1);
             }else{
@@ -24,6 +25,7 @@ public class Solution {
             if(set.contains(integerIntegerEntry.getValue())) {
                 return false;
             }else{
+                // TODO 这里 else 也没必要
                 set.add(integerIntegerEntry.getKey());
             }
         }
