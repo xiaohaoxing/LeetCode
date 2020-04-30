@@ -16,4 +16,3 @@ public class Solution {
         return Math.min(count.size(), candies.length / 2);
     }
 }
-}
