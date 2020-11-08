@@ -2,6 +2,7 @@ package algorithms.solution771;
 
 /**
  * 原地做，用charAt
+ *
  * @author 肖皓星
  * @email xiaohaoxing@outlook.com
  */
@@ -12,8 +13,8 @@ public class Solution2 {
         int result = 0;
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
-                if(S.charAt(i) == J.charAt(j)){
-                    result ++;
+                if (S.charAt(i) == J.charAt(j)) {
+                    result++;
                     break;
                 }
             }
