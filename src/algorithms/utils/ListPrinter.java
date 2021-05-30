@@ -25,7 +25,11 @@ public class ListPrinter {
     public static void printList(List<?> list) {
         StringBuilder sb = new StringBuilder("[list: ");
         for (Object o : list) {
-            sb.append(o + ",");
+            if (o instanceof List) {
+                printList((List) o);
+            } else {
+                sb.append(o + ",");
+            }
         }
         String result = sb.toString();
         System.out.println(result.substring(0, result.length() - 1) + "]");
@@ -42,4 +46,5 @@ public class ListPrinter {
         }
         System.out.println("]");
     }
+
 }
