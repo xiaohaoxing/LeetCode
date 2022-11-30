@@ -1,36 +1,29 @@
 package algorithms.solution1207;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
-/**
- * @author 肖皓星
- * @email xiaohaoxing@outlook.com
- */
 public class Solution {
     public boolean uniqueOccurrences(int[] arr) {
         HashMap<Integer, Integer> count = new HashMap<>();
-        for(int i:arr) {
-            // TODO 可以用 getOrDefault 替换掉 if else
-            if(count.containsKey(i)) {
-                count.put(i, count.get(i) + 1);
-            }else{
-                count.put(i, 1);
-            }
+        for (int i : arr) {
+            count.put(i, count.getOrDefault(i, 0) + 1);
         }
         Set<Integer> set = new HashSet<>();
-        for (Map.Entry<Integer, Integer> integerIntegerEntry : count.entrySet()) {
-            if(set.contains(integerIntegerEntry.getValue())) {
+        for (int value : count.values()) {
+            if (set.contains(value)) {
                 return false;
-            }else{
-                // TODO 这里 else 也没必要
-                set.add(integerIntegerEntry.getKey());
+            } else {
+                set.add(value);
             }
         }
         return true;
     }
-    
-    
+
+
+    public static void main(String[] args) {
+        int[] arr = new int[]{1, 2, 2, 1, 1, 3};
+        Solution test = new Solution();
+        boolean result = test.uniqueOccurrences(arr);
+        System.out.println(result);
+    }
 }
