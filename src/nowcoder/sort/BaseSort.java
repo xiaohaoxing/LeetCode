@@ -1,14 +1,13 @@
 package nowcoder.sort;
 
 import algorithms.utils.ListPrinter;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * @author 肖皓星
  */
 public abstract class BaseSort {
     public int[] sort(int[] arr) {
-        throw new NotImplementedException();
+        throw new RuntimeException();
     }
 
     public static void main(String[] args) {
