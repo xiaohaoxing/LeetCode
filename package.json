@@ -1,0 +1,19 @@
+
+{
+  "name": "leetcode-solutions",
+  "version": "1.0.0",
+  "description": "LeetCode solutions in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts-node": "ts-node"
+  },
+  "keywords": ["leetcode", "typescript", "algorithms"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+} 
