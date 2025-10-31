@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug Solution3289",
+      "request": "launch",
+      "mainClass": "algorithms.solution3289.Solution",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "args": []    
+    }
+  ]
+}
+
+

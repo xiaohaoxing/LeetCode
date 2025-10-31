@@ -1,7 +1,6 @@
 *.class
 .idea/
 .settings/
-.vscode/
 *.xml
 bin/
 .DB_Store
