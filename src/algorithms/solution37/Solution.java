@@ -8,8 +8,19 @@ import algorithms.utils.ListPrinter;
  * 迭代：
  * 遍历空格，把只有一个可能性的空格填充，从 EmptyBlock 替换为 ValueBlock，然后扩充本行，本列，本子表其他空格的值.
  * 直到所有的空格被填充完毕。
+ * 
+ * 
+ * TODO 下一步应该是实现唯一可能格点的填充。
  */
 public class Solution {
+    int n = 3;
+    int N = n * n;
+    int[][] rows = new int[N][N + 1];
+    int[][] cols = new int[N][N + 1];
+    int[][] boxes = new int[N][N + 1];
+    char[][] board;
+    boolean solved = false;
+
     public static void main(String[] args) {
         System.out.println(0 + '0');
         System.out.println(0 + '1');
@@ -27,13 +38,64 @@ public class Solution {
         Solution sol = new Solution();
         sol.solveSudoku(test);
         ListPrinter.printTable(test);
-
     }
 
     public void solveSudoku(char[][] board) {
-        int result = -1;
-        while (result != 0) {
-            result = trySolve(board);
+        this.board = board;
+        for(int i = 0; i < 9; i++) {
+            for(int j = 0; j < 9; j++) {
+                if(this.board[i][j] != '.') {
+                    this.placeNumber(this.board[i][j] - '0', i, j);
+                }
+            }
+        }
+        this.backtrack(0, 0);
+    }
+
+    public boolean canPlace(int d, int i, int j) {
+        int idx = (i / n) * n + j / n;
+        return rows[i][d] + cols[j][d] + boxes[idx][d] == 0;
+    }
+
+    public void placeNumber(int d, int i, int j) {
+        int idx = (i / n) * n + j / n;
+        rows[i][d] ++;
+        cols[j][d] ++;
+        boxes[idx][d] ++;
+        board[i][j] = (char)(d+'0');
+    }
+
+    public void removeNumber(int d, int i, int j) {
+        int idx = (i / n) * n + j / n;
+        rows[i][d] --;
+        cols[j][d] --;
+        boxes[idx][d] --;
+        board[i][j] = '.';
+    }
+
+    public void placeNextNumbers(int i, int j) {
+        if(i == N - 1 && j == N -1) {
+            solved = true;
+        } else if(j == N - 1) {
+            backtrack(i+1, 0);
+        } else {
+            backtrack(i, j+1);
+        }
+    }
+
+    public void backtrack(int i, int j) {
+        if(board[i][j] == '.') {
+            for(int d = 1; d <= 9; d ++) {
+                if(canPlace(d, i, j)) {
+                    placeNumber(d, i, j);
+                    placeNextNumbers(i, j);
+                    if(!solved) {
+                        removeNumber(d, i, j); // 这里保证了递归回溯能回到上一个空位置
+                    }
+                }
+            }
+        } else {
+            placeNextNumbers(i , j);
         }
     }
 
