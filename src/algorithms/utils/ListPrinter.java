@@ -35,14 +35,18 @@ public class ListPrinter {
         System.out.println(result.substring(0, result.length() - 1) + "]");
     }
 
-    public static void printTable(char[][] table) {
-        System.out.print("[");
-        for (char[] list : table) {
+    public static <T> void printTable(T[][] table) {
+        System.out.println("[");
+        for (T[] row : table) {
             StringBuilder sb = new StringBuilder("[");
-            for (char c : list) {
-                sb.append(c + ",");
+            for (int i = 0; i < row.length; i++) {
+                sb.append(row[i]);
+                if (i != row.length - 1) {
+                    sb.append(", ");
+                }
             }
-            System.out.println(sb.subSequence(0, sb.length() - 1) + "]");
+            sb.append("]");
+            System.out.println(sb);
         }
         System.out.println("]");
     }
