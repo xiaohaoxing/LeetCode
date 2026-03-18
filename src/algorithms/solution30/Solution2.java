@@ -11,52 +11,35 @@ public class Solution2 {
         List<Integer> results = new ArrayList<>();
         HashMap<String, Integer> wordCounts = new HashMap<>();
         for (String word : words) {
-            if (wordCounts.containsKey(word)) {
-                wordCounts.put(word, wordCounts.get(word) + 1);
-            } else {
-                wordCounts.put(word, 1);
-            }
+            wordCounts.put(word, wordCounts.getOrDefault(word, 0) + 1);
         }
         int n = words[0].length();
         for (int offset = 0; offset < n; offset++) {
             int start = offset;
             int end = offset;
             HashMap<String, Integer> currentCounts = new HashMap<>();
-            while (start + n * words.length <= s.length()) {
-                if (end - start == words.length * n) {
-                    
-                    boolean success = true;
-                    for (Map.Entry<String, Integer> entry : wordCounts.entrySet()) {
-                        if (!currentCounts.containsKey(entry.getKey())
-                                || !currentCounts.get(entry.getKey()).equals(entry.getValue())) {
-                            success = false;
-                        }
-                    }
-                    if (success) {
+            int validCount = 0;
+            while (end + n <= s.length()) {
+                String current = s.substring(end, end + n);
+                end += n;
+                if(wordCounts.containsKey(current)) {
+                    currentCounts.put(current, currentCounts.getOrDefault(current, 0) + 1);
+                    validCount ++;
+                    while(currentCounts.get(current) > wordCounts.get(current)) {
+                        // move start
+                        String left = s.substring(start, start + n);
+                        currentCounts.put(left, currentCounts.get(left) - 1);
+                        validCount --;
+                        start += n;
+                    } 
+                    if(validCount == words.length) {
                         results.add(start);
                     }
-                    // pop one
-                    String first = s.substring(start, start + n);
-                    currentCounts.put(first, currentCounts.get(first) - 1);
-
-                }
-                // push
-                if (end + n > s.length()) {
-                    break;
-                }
-                String current = s.substring(end, end + n);
-                if (currentCounts.containsKey(current)) {
-                    currentCounts.put(current, currentCounts.get(current) + 1);
                 } else {
-                    currentCounts.put(current, 1);
+                    currentCounts.clear();
+                    start = end;
+                    validCount = 0;
                 }
-                if (end - start == words.length * n) {
-                    start += n;
-                    end += n;
-                } else {
-                    end += n;
-                }
-
             }
         }
         return results;
@@ -65,7 +48,7 @@ public class Solution2 {
     public static void main(String[] args) {
         Solution2 test = new Solution2();
         List<Integer> result = test.findSubstring("barfoothefoobarman",
-                new String[] { "foo","bar"});
+                new String[] { "foo", "bar" });
         for (Integer str : result) {
             System.out.print(str + ",");
         }
